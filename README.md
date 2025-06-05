@@ -86,8 +86,6 @@ Data, Localidade, Tipo de Evento, Precipitação, Nível do Rio, Umidade do Solo
 
 O modelo retorna:
  Previsão de Eventos Naturais Extremos com Redes Neurais
- Projeto no google colab: [Projeto Redes Neurais](https://colab.research.google.com/drive/1FHYCPE8EUqwHdXn7VN7QJ0lJGh1Zosko?authuser=1#scrollTo=8bFCuCxnJ4_X)
-
 ---
 
 ## 🛠️ Próximos Passos
@@ -96,6 +94,13 @@ O modelo retorna:
 2.  **Geração de Variáveis e Divisão do Modelo**: Criar novas features (engenharia de atributos) e separar o conjunto de dados em subconjuntos para treino e teste.
 3.  **Construção e Treinamento do Modelo**: Definir a arquitetura da rede neural e proceder com seu treinamento.
 4.  **Avaliação do Modelo**: Utilizar métricas como a Matriz de Confusão, acurácia, precisão, recall, etc., para avaliar o desempenho e a robustez do modelo.
+
+---
+
+## 🔗 Recursos Adicionais
+
+* **Projeto no Google Colab**: Acesse e execute o *notebook* diretamente no Google Colab por este [link](https://colab.research.google.com/drive/1FHYCPE8EUqwHdXn7VN7QJ0lJGh1Zosko?authuser=1#scrollTo=8bFCuCxnJ4_X).
+* Demostrativo YouTube: [link externo](https://youtu.be/FnNNF5hIqqA).
 
 ---
 
@@ -162,8 +167,10 @@ Leitura em tempo real dos sensores simulados:
 
 ## 📹 Vídeo Demonstração
 
-▶️ [Link para o vídeo Redes Neurais (YouTube)](https://youtu.be/FnNNF5hIqqA)
+▶️ [Link para o vídeo Redes Neurais (YouTube)][link externo](https://youtu.be/FnNNF5hIqqA).
 
+ 
+---
 ---
 
 
