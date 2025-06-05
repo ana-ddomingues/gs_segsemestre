@@ -60,42 +60,53 @@ Criar uma aplicação que:
 
 ---
 
-## ⚙️ Tecnologias Utilizadas
+## 🧠 Parte 1 – Machine Learning com Redes Neurais
 
-- **Python** (pandas, scikit-learn, matplotlib, streamlit)
-- **Machine Learning Supervisionado** (Regressão com Random Forest)
-- **ESP32 + Sensores simulados no Wokwi**:
-  - DHT22 (temperatura/umidade)
-  - HC-SR04 (nível da água)
-  - LDR (luminosidade)
-  - Botão (chuva repentina)
-  - LEDs (alerta visual)
-- **Wokwi** (simulador de microcontroladores)
-- **Dataset:** Atlas Digital de Desastres no Brasil (S2iD)
+Utilizamos um modelo de **Rede Neural Multicamadas (MLPClassifier)** para prever a **ocorrência de eventos naturais extremos** com base em atributos históricos do banco de dados do **Atlas Digital de Desastres no Brasil**.
+
+### Principais etapas do notebook:
+
+- Pré-processamento de dados e limpeza
+- Codificação de variáveis categóricas com `LabelEncoder`
+- Separação entre variáveis preditoras e variável alvo (`evento_extremo`)
+- Divisão entre treino e teste (80/20)
+- Treinamento de uma Rede Neural MLP
+- Avaliação com métricas: matriz de confusão e relatório de classificação
+
+> O modelo busca prever, com base em entradas como tipo de desastre, localidade, população afetada, entre outros, se um **evento extremo deve ocorrer** (1) ou **não** (0).
+
+---
+
+## 🌡️ Parte 2 – Simulação com Sensores (Wokwi + ESP32)
+
+Além do modelo preditivo em Python, o projeto também conta com uma **simulação embarcada** desenvolvida no **Wokwi**, utilizando o microcontrolador **ESP32**. O objetivo é simular uma estação climática inteligente que detecta, em tempo real, condições ambientais que podem indicar riscos de desastres naturais.
+
+### Componentes simulados:
+
+- **DHT22**: mede temperatura e umidade do ambiente;
+- **HC-SR04**: simula o nível da água (ex: enchentes);
+- **LDR (fotoresistor)**: mede intensidade de luz (associada a risco de seca ou incêndio);
+- **Botão físico**: simula eventos repentinos como chuvas intensas;
+- **LEDs (verde, amarelo, vermelho)**: indicam o nível de risco detectado.
+
+### Lógica de funcionamento:
+
+- **Verde**: condições normais;
+- **Amarelo**: atenção (nível elevado de água ou baixa luminosidade);
+- **Vermelho**: risco crítico (alta temperatura, baixa umidade, chuva intensa simulada).
+
+A lógica embarcada permite que o sistema tome decisões em tempo real com base nas leituras dos sensores, reforçando o caráter preventivo da aplicação.
 
 ---
 
-## 🧠 Como Funciona
+## 🎯 Resultados Esperados
 
-### Parte 1 – Machine Learning
+- Previsão automatizada da ocorrência de eventos extremos;
+- Protótipo com sensores que simula monitoramento ambiental em tempo real;
+- Solução de apoio a decisões emergenciais em casos de desastre;
+- Ferramenta que une aprendizado de máquina, lógica embarcada e análise de dados.
 
-Entrada de variáveis como:
-Data, Localidade, Tipo de Evento, Precipitação, Nível do Rio, Umidade do Solo (em porcentagem), Temperatura, Evento Extremo.
 
-![image](https://github.com/user-attachments/assets/73b87541-dd52-4ee3-a80a-43c5979527fd)
-
-O modelo retorna:
- Previsão de Eventos Naturais Extremos com Redes Neurais
----
-
-## 🛠️ Próximos Passos
-
-1.  **Pré-processamento de Dados**: Realizar a limpeza, tratamento de valores ausentes e normalização dos dados.
-2.  **Geração de Variáveis e Divisão do Modelo**: Criar novas features (engenharia de atributos) e separar o conjunto de dados em subconjuntos para treino e teste.
-3.  **Construção e Treinamento do Modelo**: Definir a arquitetura da rede neural e proceder com seu treinamento.
-4.  **Avaliação do Modelo**: Utilizar métricas como a Matriz de Confusão, acurácia, precisão, recall, etc., para avaliar o desempenho e a robustez do modelo.
-
----
 
 ## 🔗 Recursos Adicionais
 
@@ -104,75 +115,13 @@ O modelo retorna:
 
 ---
 
-Desenvolvimento da Rede Neural
-
-![image](https://github.com/user-attachments/assets/58c595c2-f9c4-4a00-bfcf-621ccffcd92b)
-
-![image](https://github.com/user-attachments/assets/e6cfecb6-4d30-4150-9ac6-059093992ceb)
-
-![image](https://github.com/user-attachments/assets/94796794-620d-45a9-95d0-23485bfd44ee)
-
-
-![image](https://github.com/user-attachments/assets/504319ad-5513-4c7b-8298-16355894ff5e)
-
-## 📊 Análise de Correlação das Variáveis com Eventos Extremos
-
-A tabela abaixo detalha a correlação de cada variável do nosso dataset com a ocorrência de um **evento extremo**. Compreender esses valores é crucial para identificar os fatores mais influentes e informar a engenharia de features para o modelo preditivo.
-
-| Variável         | Correlação com `evento_extremo` | Interpretação                                                                     |
-| :--------------- | :------------------------------ | :-------------------------------------------------------------------------------- |
-| `precipitacao_mm`  | **0.32 (positiva moderada)** | **Aumentos no volume de chuva estão associados a uma maior probabilidade de eventos extremos.** |
-| `nivel_rio_m`      | 0.19                            | O nível do rio pode ser um indicador de risco para certos eventos, como enchentes. |
-| `tipo_evento`    | -0.13                           | Correlação baixa; seu impacto pode ser maior se a variável for codificada de forma mais granular. |
-| `umidade_solo_%`   | -0.12                           | Pode influenciar eventos como secas ou deslizamentos de terra.                  |
-| `temperatura_C`    | -0.11                           | Apresenta baixa correlação direta, mas pode ter um impacto mais significativo quando combinada com outras variáveis. |
-| `localidade`     | -0.11                           | Correlação muito fraca; talvez seja mais útil para agrupar ou regionalizar dados. |
-
-## 💡 Principais Insights
-
-Com base na análise de correlação, identificamos os seguintes pontos chave:
-
-* A variável `precipitacao_mm` é a mais correlacionada com `evento_extremo`, o que faz total sentido, pois muita chuva está diretamente ligada a eventos como enchentes ou deslizamentos.
-* O `nivel_rio_m` também se mostrou relevante, indicando que o modelo pode usar essa informação como um sinal importante de risco de eventos.
-* Variáveis como `temperatura_C` e `umidade_solo_%` apresentaram correlação mais baixa, mas isso não significa que devem ser descartadas. Elas ainda podem ser úteis em combinação com outras variáveis e não devem ser eliminadas sem testes aprofundados.
-* A `localidade` possui uma correlação negativa fraca. Isso sugere que ela pode ser melhor tratada como um agrupamento ou como uma *dummy variable* (variáveis categóricas transformadas) para capturar efeitos regionais específicos.
-
----
-
-## 🎯 Objetivos
-
-O principal objetivo deste trabalho foi **construir uma Rede Neural Artificial (MLP - Multi-Layer Perceptron)** utilizando a linguagem Python, com o propósito de **prever a ocorrência de eventos extremos ambientais**.
-
-Para isso, usamos um conjunto de dados reais contendo variáveis como:
-* Precipitação (chuva)
-* Nível do rio
-* Umidade do solo
-* Temperatura
-* Tipo de evento
-* E o resultado final: se ocorreu ou não um evento extremo.
-
-Foi necessário preparar e limpar os dados, normalizar os valores e dividir o conjunto entre treino e teste. A rede neural foi então treinada para reconhecer padrões e aprender a prever, com base nesses dados, se um evento extremo vai ocorrer ou não.
-
----
-
-
-### Parte 2 – Estação Climática Simulada
-
-Leitura em tempo real dos sensores simulados:
-
-- Acionamento de LEDs (verde, amarelo e vermelho) conforme o risco ambiental detectado;
-- Visualização dos dados no Monitor Serial do Wokwi.
-
----
-
 ## 📹 Vídeo Demonstração
 
-▶️ [Link para o vídeo Redes Neurais (YouTube)][link externo](https://youtu.be/FnNNF5hIqqA).
+[Link para o vídeo Redes Neurais (YouTube)][link externo](https://youtu.be/FnNNF5hIqqA).
 
- 
----
----
+ℹ️ **Nota:** Todas as explicações detalhadas sobre o funcionamento, arquitetura, resultados e melhorias estão descritas no PDF entregue junto ao projeto.
 
+---
 
 ## 🗃 Histórico de lançamentos
 * 0.1.0 - 02/06/2025
