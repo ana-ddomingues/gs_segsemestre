@@ -6,16 +6,19 @@
 
 <br>
 
-# Nome do projeto
+# 🌎 Previsor de Perdas por Desastres Naturais
+
+## Nome do projeto
+Global Solution - 2º Semestre
 
 ## Nome do grupo
+Grupo 18
 
 ## 👨‍🎓 Integrantes: 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 1</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 2</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 3</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 4</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 5</a>
+- [Ana Beatriz Duarte Domingues](https://www.linkedin.com/in/)
+- [Junior Rodrigues da Silva](https://www.linkedin.com/in/jrsilva051/)
+- [Carlos Emilio Castillo Estrada](https://www.linkedin.com/in/)
+
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
@@ -23,47 +26,82 @@
 ### Coordenador(a)
 - <a href="https://www.linkedin.com/company/inova-fusca">Nome do Coordenador</a>
 
+---
+
 
 ## 📜 Descrição
 
-*Descreva seu projeto com base no texto do PBL (até 600 palavras)*
+Este repositório contém todos os arquivos e códigos referentes ao projeto da **Global Solution 2025.1**, cujo objetivo é desenvolver uma solução digital baseada em dados reais para prever, monitorar ou mitigar os impactos de desastres naturais extremos.
 
+---
 
 ## 📁 Estrutura de pastas
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-- <b>.github</b>: Nesta pasta ficarão os arquivos de configuração específicos do GitHub que ajudam a gerenciar e automatizar processos no repositório.
-
 - <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
 
 - <b>config</b>: Posicione aqui arquivos de configuração que são usados para definir parâmetros e ajustes do projeto.
-
-- <b>document</b>: aqui estão todos os documentos do projeto que as atividades poderão pedir. Na subpasta "other", adicione documentos complementares e menos importantes.
 
 - <b>scripts</b>: Posicione aqui scripts auxiliares para tarefas específicas do seu projeto. Exemplo: deploy, migrações de banco de dados, backups.
 
 - <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto ao longo das 7 fases.
 
-- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
+- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto.
 
-## 🔧 Como executar o código
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório. Considere a explicação organizada em fase.*
+## 📌 Objetivo do Projeto
+
+Criar uma aplicação que:
+
+- Utilize **Machine Learning** para prever o valor estimado de perdas econômicas em desastres naturais;
+- Simule uma estação climática inteligente usando sensores no **Wokwi (ESP32)** para identificar riscos ambientais;
+- Una dados históricos com entradas físicas simuladas para gerar alertas e apoiar decisões preventivas.
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+- **Python** (pandas, scikit-learn, matplotlib, streamlit)
+- **Machine Learning Supervisionado** (Regressão com Random Forest)
+- **ESP32 + Sensores simulados no Wokwi**:
+  - DHT22 (temperatura/umidade)
+  - HC-SR04 (nível da água)
+  - LDR (luminosidade)
+  - Botão (chuva repentina)
+  - LEDs (alerta visual)
+- **Wokwi** (simulador de microcontroladores)
+- **Dataset:** Atlas Digital de Desastres no Brasil (S2iD)
+
+---
+
+## 🧠 Como Funciona
+
+### Parte 1 – Machine Learning
+
+Entrada de variáveis como tipo de desastre, estado, mês, setores afetados e população. O modelo retorna:
+
+- Valor estimado de perdas (em R$)
+- Comparativo com média histórica de eventos semelhantes
+
+### Parte 2 – Estação Climática Simulada
+
+Leitura em tempo real dos sensores simulados:
+
+- Acionamento de LEDs (verde, amarelo e vermelho) conforme o risco ambiental detectado;
+- Visualização dos dados no Monitor Serial do Wokwi.
+
+---
+
+## 📹 Vídeo Demonstração
+
+▶️ [Link para o vídeo (YouTube)](URL_DO_VÍDEO_AQUI)
+
+---
 
 
 ## 🗃 Histórico de lançamentos
-
-* 0.5.0 - XX/XX/2024
-    * 
-* 0.4.0 - XX/XX/2024
-    * 
-* 0.3.0 - XX/XX/2024
-    * 
-* 0.2.0 - XX/XX/2024
-    * 
-* 0.1.0 - XX/XX/2024
-    *
+* 0.1.0 - 02/06/2025
 
 ## 📋 Licença
 
