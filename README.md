@@ -79,7 +79,23 @@ Criar uma aplicação que:
 
 ### Parte 1 – Machine Learning
 
-Entrada de variáveis como tipo de desastre, estado, mês, setores afetados e população. O modelo retorna:
+Entrada de variáveis como:
+•	Data
+•	Localidade
+•	Tipo de Evento
+•	Precipitação
+•	Nível do Rio
+•	Umidade do Solo (em porcentagem)
+•	Temperatura
+•	Evento Extremo
+
+![image](https://github.com/user-attachments/assets/73b87541-dd52-4ee3-a80a-43c5979527fd)
+
+O modelo retorna:
+ Previsão de Eventos Naturais Extremos com Redes Neurais
+ Projeto no google colab: [Projeto Redes Neurais](https://colab.research.google.com/drive/1FHYCPE8EUqwHdXn7VN7QJ0lJGh1Zosko?authuser=1#scrollTo=8bFCuCxnJ4_X)
+
+ 
 
 - Valor estimado de perdas (em R$)
 - Comparativo com média histórica de eventos semelhantes
@@ -95,7 +111,7 @@ Leitura em tempo real dos sensores simulados:
 
 ## 📹 Vídeo Demonstração
 
-▶️ [Link para o vídeo (YouTube)](URL_DO_VÍDEO_AQUI)
+▶️ [Link para o vídeo Redes Neurais (YouTube)](https://youtu.be/FnNNF5hIqqA)
 
 ---
 
