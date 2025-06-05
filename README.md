@@ -80,14 +80,7 @@ Criar uma aplicação que:
 ### Parte 1 – Machine Learning
 
 Entrada de variáveis como:
-•	Data
-•	Localidade
-•	Tipo de Evento
-•	Precipitação
-•	Nível do Rio
-•	Umidade do Solo (em porcentagem)
-•	Temperatura
-•	Evento Extremo
+Data, Localidade, Tipo de Evento, Precipitação, Nível do Rio, Umidade do Solo (em porcentagem), Temperatura, Evento Extremo.
 
 ![image](https://github.com/user-attachments/assets/73b87541-dd52-4ee3-a80a-43c5979527fd)
 
@@ -95,10 +88,68 @@ O modelo retorna:
  Previsão de Eventos Naturais Extremos com Redes Neurais
  Projeto no google colab: [Projeto Redes Neurais](https://colab.research.google.com/drive/1FHYCPE8EUqwHdXn7VN7QJ0lJGh1Zosko?authuser=1#scrollTo=8bFCuCxnJ4_X)
 
- 
+---
 
-- Valor estimado de perdas (em R$)
-- Comparativo com média histórica de eventos semelhantes
+## 🛠️ Próximos Passos
+
+1.  **Pré-processamento de Dados**: Realizar a limpeza, tratamento de valores ausentes e normalização dos dados.
+2.  **Geração de Variáveis e Divisão do Modelo**: Criar novas features (engenharia de atributos) e separar o conjunto de dados em subconjuntos para treino e teste.
+3.  **Construção e Treinamento do Modelo**: Definir a arquitetura da rede neural e proceder com seu treinamento.
+4.  **Avaliação do Modelo**: Utilizar métricas como a Matriz de Confusão, acurácia, precisão, recall, etc., para avaliar o desempenho e a robustez do modelo.
+
+---
+
+Desenvolvimento da Rede Neural
+
+![image](https://github.com/user-attachments/assets/58c595c2-f9c4-4a00-bfcf-621ccffcd92b)
+
+![image](https://github.com/user-attachments/assets/e6cfecb6-4d30-4150-9ac6-059093992ceb)
+
+![image](https://github.com/user-attachments/assets/94796794-620d-45a9-95d0-23485bfd44ee)
+
+
+![image](https://github.com/user-attachments/assets/504319ad-5513-4c7b-8298-16355894ff5e)
+
+## 📊 Análise de Correlação das Variáveis com Eventos Extremos
+
+A tabela abaixo detalha a correlação de cada variável do nosso dataset com a ocorrência de um **evento extremo**. Compreender esses valores é crucial para identificar os fatores mais influentes e informar a engenharia de features para o modelo preditivo.
+
+| Variável         | Correlação com `evento_extremo` | Interpretação                                                                     |
+| :--------------- | :------------------------------ | :-------------------------------------------------------------------------------- |
+| `precipitacao_mm`  | **0.32 (positiva moderada)** | **Aumentos no volume de chuva estão associados a uma maior probabilidade de eventos extremos.** |
+| `nivel_rio_m`      | 0.19                            | O nível do rio pode ser um indicador de risco para certos eventos, como enchentes. |
+| `tipo_evento`    | -0.13                           | Correlação baixa; seu impacto pode ser maior se a variável for codificada de forma mais granular. |
+| `umidade_solo_%`   | -0.12                           | Pode influenciar eventos como secas ou deslizamentos de terra.                  |
+| `temperatura_C`    | -0.11                           | Apresenta baixa correlação direta, mas pode ter um impacto mais significativo quando combinada com outras variáveis. |
+| `localidade`     | -0.11                           | Correlação muito fraca; talvez seja mais útil para agrupar ou regionalizar dados. |
+
+## 💡 Principais Insights
+
+Com base na análise de correlação, identificamos os seguintes pontos chave:
+
+* A variável `precipitacao_mm` é a mais correlacionada com `evento_extremo`, o que faz total sentido, pois muita chuva está diretamente ligada a eventos como enchentes ou deslizamentos.
+* O `nivel_rio_m` também se mostrou relevante, indicando que o modelo pode usar essa informação como um sinal importante de risco de eventos.
+* Variáveis como `temperatura_C` e `umidade_solo_%` apresentaram correlação mais baixa, mas isso não significa que devem ser descartadas. Elas ainda podem ser úteis em combinação com outras variáveis e não devem ser eliminadas sem testes aprofundados.
+* A `localidade` possui uma correlação negativa fraca. Isso sugere que ela pode ser melhor tratada como um agrupamento ou como uma *dummy variable* (variáveis categóricas transformadas) para capturar efeitos regionais específicos.
+
+---
+
+## 🎯 Objetivos
+
+O principal objetivo deste trabalho foi **construir uma Rede Neural Artificial (MLP - Multi-Layer Perceptron)** utilizando a linguagem Python, com o propósito de **prever a ocorrência de eventos extremos ambientais**.
+
+Para isso, usamos um conjunto de dados reais contendo variáveis como:
+* Precipitação (chuva)
+* Nível do rio
+* Umidade do solo
+* Temperatura
+* Tipo de evento
+* E o resultado final: se ocorreu ou não um evento extremo.
+
+Foi necessário preparar e limpar os dados, normalizar os valores e dividir o conjunto entre treino e teste. A rede neural foi então treinada para reconhecer padrões e aprender a prever, com base nesses dados, se um evento extremo vai ocorrer ou não.
+
+---
+
 
 ### Parte 2 – Estação Climática Simulada
 
