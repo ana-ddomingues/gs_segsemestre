@@ -41,13 +41,15 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 - <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
 
-- <b>config</b>: Posicione aqui arquivos de configuração que são usados para definir parâmetros e ajustes do projeto.
-
-- <b>scripts</b>: Posicione aqui scripts auxiliares para tarefas específicas do seu projeto. Exemplo: deploy, migrações de banco de dados, backups.
-
-- <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto ao longo das 7 fases.
+- <b>src</b>: todo o código fonte criado para o desenvolvimento do projeto ao longo das 7 fases.
 
 - <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto.
+
+- <b>GlobalSolution_2</b>: notebook do desenvolvimento do projeto.
+
+- <b>LinkApresentação</b>: link do vídeo de execução do projeto.
+
+- <b>link_projeto_wokwi</b>: link da simulação do ESP32 + sensores
 
 
 ## 📌 Objetivo do Projeto
@@ -110,14 +112,10 @@ A lógica embarcada permite que o sistema tome decisões em tempo real com base 
 
 ## 🔗 Recursos Adicionais
 
-* **Projeto no Google Colab**: Acesse e execute o *notebook* diretamente no Google Colab por este [link](https://colab.research.google.com/drive/1FHYCPE8EUqwHdXn7VN7QJ0lJGh1Zosko?authuser=1#scrollTo=8bFCuCxnJ4_X).
-* Demostrativo YouTube: [link externo](https://youtu.be/FnNNF5hIqqA).
+* **Projeto no Google Colab**: Acesse e execute por este [link](./https://colab.research.google.com/drive/1FHYCPE8EUqwHdXn7VN7QJ0lJGh1Zosko?authuser=1#scrollTo=8bFCuCxnJ4_X).
+* **Projeto no Wokwi**: Acesse e execute por este [link](./https://wokwi.com/projects/432495108307517441)
+* **Demostrativo YouTube**: [link externo](./https://youtu.be/RpS_HxwNmxk).
 
----
-
-## 📹 Vídeo Demonstração
-
-[Link para o vídeo Redes Neurais (YouTube)][link externo](https://youtu.be/FnNNF5hIqqA).
 
 ℹ️ **Nota:** Todas as explicações detalhadas sobre o funcionamento, arquitetura, resultados e melhorias estão descritas no PDF entregue junto ao projeto.
 
