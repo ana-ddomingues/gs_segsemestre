@@ -112,9 +112,9 @@ A lógica embarcada permite que o sistema tome decisões em tempo real com base 
 
 ## 🔗 Recursos Adicionais
 
-* **Projeto no Google Colab**: Acesse e execute por este [link](./https://colab.research.google.com/drive/1FHYCPE8EUqwHdXn7VN7QJ0lJGh1Zosko?authuser=1#scrollTo=8bFCuCxnJ4_X).
-* **Projeto no Wokwi**: Acesse e execute por este [link](./https://wokwi.com/projects/432495108307517441)
-* **Demostrativo YouTube**: [link externo](./https://youtu.be/RpS_HxwNmxk).
+* **Projeto no Google Colab**: Acesse e execute por este [link](https://colab.research.google.com/drive/1FHYCPE8EUqwHdXn7VN7QJ0lJGh1Zosko?authuser=1#scrollTo=8bFCuCxnJ4_X)
+* **Projeto no Wokwi**: Acesse e execute por este [link](https://wokwi.com/projects/432495108307517441)
+* **Demonstrativo no YouTube**: Acesse o vídeo por este [link](https://youtu.be/RpS_HxwNmxk)
 
 
 ℹ️ **Nota:** Todas as explicações detalhadas sobre o funcionamento, arquitetura, resultados e melhorias estão descritas no PDF entregue junto ao projeto.
