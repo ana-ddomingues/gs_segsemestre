@@ -1,0 +1,101 @@
+data,localidade,tipo_evento,precipitacao_mm,nivel_rio_m,umidade_solo_%,temperatura_C,evento_extremo
+2023-05-30,Manaus,incêndio,118,0.67,53,41.8,não
+2023-12-24,Manaus,enchente,26,1.94,23,40.1,não
+2022-04-18,Porto Alegre,seca,123,8.05,56,29.5,não
+2022-07-03,São Paulo,deslizamento,0,6.89,85,38.0,não
+2022-01-07,Recife,deslizamento,15,0.84,77,28.2,não
+2022-12-03,Recife,enchente,152,7.55,20,28.3,sim
+2024-03-07,Porto Alegre,incêndio,68,6.89,97,21.1,não
+2022-12-31,Manaus,calor_extremo,27,2.17,73,21.9,não
+2024-01-04,São Paulo,seca,257,2.83,11,38.4,não
+2023-08-02,Manaus,enchente,234,4.92,61,40.0,não
+2022-05-31,Porto Alegre,deslizamento,84,8.04,25,21.3,não
+2022-10-06,Recife,seca,179,6.86,40,29.5,não
+2024-04-15,Belo Horizonte,enchente,57,6.57,56,40.3,não
+2022-03-20,Belo Horizonte,deslizamento,111,3.42,76,34.1,não
+2024-01-23,Porto Alegre,seca,72,8.37,95,32.3,não
+2024-10-27,Porto Alegre,seca,181,9.01,40,41.7,não
+2022-10-08,Manaus,deslizamento,8,4.32,83,29.2,não
+2022-11-09,Recife,enchente,4,4.61,78,35.8,não
+2024-05-04,Manaus,calor_extremo,70,3.89,53,36.3,não
+2024-12-28,Manaus,incêndio,11,1.08,16,34.7,não
+2023-07-18,Belo Horizonte,deslizamento,5,1.77,100,34.4,não
+2024-10-30,Belo Horizonte,enchente,8,4.49,20,32.8,não
+2022-12-04,São Paulo,incêndio,12,1.24,86,36.0,não
+2022-07-30,Manaus,seca,163,2.38,80,39.7,não
+2022-04-15,Porto Alegre,enchente,170,1.03,50,30.9,não
+2024-04-19,Recife,seca,25,9.34,92,26.0,não
+2024-06-12,São Paulo,calor_extremo,236,6.4,22,31.5,não
+2023-07-03,Manaus,incêndio,4,4.53,25,29.3,não
+2023-09-17,Porto Alegre,deslizamento,159,7.78,42,33.9,não
+2024-01-27,Porto Alegre,calor_extremo,254,9.24,40,32.5,não
+2022-01-30,Porto Alegre,seca,36,5.44,33,26.3,não
+2023-06-26,Porto Alegre,enchente,282,3.6,31,30.0,não
+2023-05-09,Porto Alegre,enchente,203,8.04,64,21.3,sim
+2024-08-18,Belo Horizonte,enchente,134,8.35,50,33.2,não
+2024-01-14,São Paulo,enchente,155,5.65,44,34.9,não
+2022-02-07,Recife,deslizamento,15,5.55,92,39.9,não
+2023-02-22,Manaus,enchente,279,5.03,83,24.4,não
+2022-11-01,Porto Alegre,enchente,160,2.94,20,33.8,não
+2022-10-27,Porto Alegre,calor_extremo,242,5.72,17,30.5,não
+2024-01-18,Manaus,incêndio,55,8.24,100,38.8,não
+2023-04-13,São Paulo,seca,10,2.66,87,37.6,não
+2024-01-18,Manaus,incêndio,4,3.12,86,40.1,não
+2023-03-14,Manaus,incêndio,44,4.13,88,22.4,não
+2023-06-20,Belo Horizonte,seca,102,6.9,55,39.9,não
+2023-01-15,Porto Alegre,incêndio,0,0.97,30,39.9,não
+2023-05-27,São Paulo,enchente,238,5.33,20,22.4,não
+2024-03-18,Porto Alegre,seca,206,6.2,44,36.9,não
+2024-06-01,Belo Horizonte,seca,12,4.76,87,20.5,não
+2023-05-18,Belo Horizonte,calor_extremo,158,4.28,58,34.3,não
+2022-04-25,Recife,deslizamento,132,3.34,57,40.3,não
+2024-05-24,São Paulo,deslizamento,2,7.13,16,21.3,não
+2023-12-22,Porto Alegre,deslizamento,184,5.71,25,31.7,não
+2023-02-08,Porto Alegre,deslizamento,62,1.12,23,41.4,não
+2023-12-14,Recife,seca,96,1.71,43,41.2,não
+2022-08-29,Manaus,deslizamento,87,8.02,75,20.7,não
+2022-10-20,São Paulo,incêndio,248,8.48,82,31.7,não
+2022-02-12,Porto Alegre,deslizamento,0,7.36,81,31.3,não
+2023-12-18,Recife,calor_extremo,201,3.98,42,37.4,não
+2023-02-12,Porto Alegre,deslizamento,231,5.19,30,22.3,sim
+2024-07-14,Belo Horizonte,seca,9,8.06,97,33.9,não
+2024-07-29,Manaus,seca,281,4.12,23,41.3,não
+2024-02-05,Belo Horizonte,deslizamento,300,7.52,74,38.4,sim
+2023-04-08,Manaus,enchente,168,1.45,97,30.3,não
+2024-09-19,Manaus,seca,69,5.5,30,32.0,não
+2022-08-21,Porto Alegre,incêndio,130,8.46,22,37.3,não
+2024-08-27,Manaus,seca,68,8.3,90,35.3,não
+2023-10-28,São Paulo,enchente,231,3.65,53,35.9,não
+2023-04-15,Recife,enchente,192,2.59,36,41.3,não
+2024-01-13,São Paulo,deslizamento,193,9.69,31,25.4,não
+2024-04-10,Recife,seca,36,1.7,60,34.5,não
+2024-10-09,Manaus,calor_extremo,160,8.78,55,36.2,não
+2023-06-19,Recife,deslizamento,131,0.63,69,33.9,não
+2022-08-06,Belo Horizonte,seca,152,1.75,98,34.1,não
+2024-01-22,São Paulo,seca,197,9.77,23,28.1,não
+2023-04-12,Belo Horizonte,seca,267,8.9,41,39.5,não
+2023-04-11,Manaus,calor_extremo,131,2.29,50,27.5,não
+2023-02-23,Manaus,calor_extremo,200,9.2,29,33.2,não
+2022-01-01,São Paulo,calor_extremo,287,2.52,36,25.9,não
+2022-09-02,Manaus,incêndio,46,1.15,51,27.5,não
+2024-09-08,São Paulo,deslizamento,261,0.61,29,28.4,não
+2022-11-09,São Paulo,enchente,284,2.14,95,38.9,não
+2024-07-29,São Paulo,enchente,287,8.05,26,41.3,sim
+2023-06-19,Recife,incêndio,243,2.46,42,29.3,não
+2022-07-05,Recife,calor_extremo,75,6.25,15,31.3,não
+2024-05-06,Belo Horizonte,enchente,287,6.98,91,25.8,sim
+2023-04-13,Recife,incêndio,2,6.12,87,41.4,não
+2023-09-29,Belo Horizonte,seca,198,2.56,97,33.2,não
+2023-06-20,Porto Alegre,seca,30,5.5,65,37.2,não
+2022-03-29,Recife,calor_extremo,143,6.59,83,36.8,não
+2022-03-01,Porto Alegre,incêndio,166,2.77,39,24.9,não
+2023-08-17,São Paulo,incêndio,47,5.58,21,32.9,não
+2022-05-29,Belo Horizonte,deslizamento,80,4.73,71,33.7,não
+2023-02-19,Recife,seca,230,8.6,57,33.4,não
+2022-03-06,São Paulo,enchente,291,4.1,92,37.3,não
+2022-02-26,Manaus,deslizamento,142,1.31,92,22.3,não
+2022-04-07,Manaus,calor_extremo,40,8.29,44,22.3,não
+2024-05-19,Recife,calor_extremo,277,7.27,81,20.4,não
+2022-12-20,Recife,seca,74,8.0,12,28.0,não
+2024-12-25,Manaus,calor_extremo,249,2.77,19,38.8,sim
+2022-06-03,Belo Horizonte,enchente,161,8.72,25,25.3,sim
